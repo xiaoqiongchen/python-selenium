@@ -1,0 +1,8 @@
+open_browser||chrome
+visit_url||https://mail.163.com/
+implicit_waiting||3
+swith_to_iframe||xpath||//div[@id="loginDiv"]/iframe
+input_content||xpath||//*[@name="email"]||${user_name}
+input_content||xpath||//*[@name="password"]||${password}
+click||id||dologin
+swith_out_iframe

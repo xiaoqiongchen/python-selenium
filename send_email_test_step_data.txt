@@ -1,0 +1,11 @@
+sleep_time||4
+click||xpath||//header[@class="frame-head"]/nav/div/ul/li/div[3]
+click||xpath||//b[@class="nui-ico fn-bg ga0"]
+input_content||xpath||//div[@class="kZ0 eB0"]/div/div/div[2]/div/input||${sender}
+input_content||xpath||//div[@class="kZ0 fu0"]/div/div/div/input||${title}
+input_content||xpath||//div[@class="ia0"]/div/div[2]/input||${filename}
+swith_to_iframe||xpath||//iframe[@class="APP-editor-iframe"]
+input_content||xpath||//body[@class="nui-scroll"]/p||${content}
+swith_out_iframe
+click||xpath||//footer[@class="jp0"]/div/span[2]
+quit
